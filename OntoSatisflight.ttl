@@ -1,0 +1,963 @@
+@prefix : <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/> .
+
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight> rdf:type owl:Ontology ;
+                                                                      rdfs:comment "An ontology for flight satisfaction surveys" ;
+                                                                      rdfs:label "OntoSatisflight" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.w3.org/2000/01/rdf-schema#sameAs
+rdfs:sameAs rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasAircraft
+:hasAircraft rdf:type owl:ObjectProperty ;
+             rdfs:domain :Flight ;
+             rdfs:range :Aircraft ;
+             rdfs:comment "Relates a flight with the aircraft that's flown it." ;
+             rdfs:label "hasAircraft" .
+
+
+###  http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasAirport
+:hasAirport rdf:type owl:ObjectProperty ;
+            owl:inverseOf :isAirportOf ;
+            rdfs:domain :Flight ;
+            rdfs:range :Airport ;
+            rdfs:comment "Superclass for hasOrigin, hasDestination and hasStop." ;
+            rdfs:label "hasAirport" .
+
+
+###  http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasAuthor
+:hasAuthor rdf:type owl:ObjectProperty ;
+           owl:inverseOf :isAuthorOf ;
+           rdfs:domain :Survey ;
+           rdfs:range :Traveler ;
+           rdfs:comment "Relates a survey with its author." ;
+           rdfs:label "hasAuthor" .
+
+
+###  http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasCountry
+:hasCountry rdf:type owl:ObjectProperty ;
+            owl:inverseOf :isCountryOf ;
+            rdfs:domain :Person ;
+            rdfs:range :Country ;
+            rdfs:comment "Relates a person with its nationality or nationalities." ;
+            rdfs:label "hasCountry" .
+
+
+###  http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasDestination
+:hasDestination rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf :hasAirport ;
+                owl:inverseOf :isDestinationOf ;
+                rdf:type owl:FunctionalProperty ;
+                rdfs:domain :Flight ;
+                rdfs:range :Airport ;
+                rdfs:comment "Relates a flight with the airport it's arrived in." ;
+                rdfs:label "hasDestination" .
+
+
+###  http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasFlight
+:hasFlight rdf:type owl:ObjectProperty ;
+           rdfs:domain :Survey ;
+           rdfs:range :Flight ;
+           rdfs:comment "Relates a survey with its associated flight." ;
+           rdfs:label "hasFlight" .
+
+
+###  http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasOrigin
+:hasOrigin rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf :hasAirport ;
+           owl:inverseOf :isOriginOf ;
+           rdf:type owl:FunctionalProperty ;
+           rdfs:domain :Flight ;
+           rdfs:range :Airport ;
+           rdfs:comment "Relates a flight with the airport it's departed from." ;
+           rdfs:label "hasOrigin" .
+
+
+###  http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasRating
+:hasRating rdf:type owl:ObjectProperty ;
+           rdfs:domain :Survey ;
+           rdfs:range :Rating ;
+           rdfs:comment "Relates a survey with its associated rating or ratings." ;
+           rdfs:label "hasRating" .
+
+
+###  http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasSeatType
+:hasSeatType rdf:type owl:ObjectProperty ;
+             rdfs:domain :Survey ;
+             rdfs:range :SeatType ;
+             rdfs:comment "Relates a survey with the type of seat that its traveler has sat on during the flight." ;
+             rdfs:label "hasSeatType" .
+
+
+###  http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasStop
+:hasStop rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf :hasAirport ;
+         owl:inverseOf :isStopOf ;
+         rdfs:domain :Flight ;
+         rdfs:range :Airport ;
+         rdfs:comment "Relates a flight with the airport or airports it's stopped in, if any." ;
+         rdfs:label "hasStop" .
+
+
+###  http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasTravelerType
+:hasTravelerType rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Survey ;
+                 rdfs:range :TravelerType ;
+                 rdfs:comment "Relates a survey with the type of traveler that has answered it." ;
+                 rdfs:label "hasTravelerType" .
+
+
+###  http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/isAirportOf
+:isAirportOf rdf:type owl:ObjectProperty ;
+             rdfs:comment "Inverse of hasAirport. Superclass for isOriginOf, isDestinationOf and isStopOf." ;
+             rdfs:label "isAirportOf" .
+
+
+###  http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/isAuthorOf
+:isAuthorOf rdf:type owl:ObjectProperty ;
+            rdfs:comment "Inverse of hasAuthor. Relates a traveler with the surveys they've answered." ;
+            rdfs:label "isAuthorOf" .
+
+
+###  http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/isCountryOf
+:isCountryOf rdf:type owl:ObjectProperty ;
+             rdfs:comment "Inverse of hasCountry. Relates a country to every airport that's in it." ;
+             rdfs:label "isCountryOf" .
+
+
+###  http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/isDestinationOf
+:isDestinationOf rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf :isAirportOf ;
+                 rdf:type owl:InverseFunctionalProperty ;
+                 rdfs:comment "Inverse of hasDestination. Relates an airport with every flight that arrives in there." ;
+                 rdfs:label "isDestinationOf" .
+
+
+###  http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/isOriginOf
+:isOriginOf rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :isAirportOf ;
+            rdf:type owl:InverseFunctionalProperty ;
+            rdfs:comment "Inverse of hasOrigin. Relates an airport with every flight that departs from there." ;
+            rdfs:label "isOriginOf" .
+
+
+###  http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/isStopOf
+:isStopOf rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf :isAirportOf ;
+          rdfs:comment "Inverse of hasStop. Relates an airport with every flight that stops there." ;
+          rdfs:label "isStopOf" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasComment
+:hasComment rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Survey ;
+            rdfs:range xsd:string ;
+            rdfs:comment "String. The body of the review." ;
+            rdfs:label "hasComment" .
+
+
+###  http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasFlightDate
+:hasFlightDate rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Flight ;
+               rdfs:range xsd:dateTime ;
+               rdfs:comment "DateTime. The date of the flight." ;
+               rdfs:label "hasFlightDate" .
+
+
+###  http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasGlobalValue
+:hasGlobalValue rdf:type owl:DatatypeProperty ;
+                rdfs:domain :GeneralRating ;
+                rdfs:range [ rdf:type rdfs:Datatype ;
+                             owl:onDatatype xsd:int ;
+                             owl:withRestrictions ( [ xsd:minInclusive "1"^^xsd:int
+                                                    ]
+                                                    [ xsd:maxInclusive "10"^^xsd:int
+                                                    ]
+                                                  )
+                           ] ;
+                rdfs:comment "Integer [1, 10]. The global score of a review." ;
+                rdfs:label "hasGlobalValue" .
+
+
+###  http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasName
+:hasName rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Person ;
+         rdfs:range xsd:string ;
+         rdfs:comment "String. The name of a person." ;
+         rdfs:label "hasName" .
+
+
+###  http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasPublicationDate
+:hasPublicationDate rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :Survey ;
+                    rdfs:range xsd:dateTime ;
+                    rdfs:comment "DateTime. The publication date of a review." ;
+                    rdfs:label "hasPublicationDate" .
+
+
+###  http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasRecommendation
+:hasRecommendation rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :Survey ;
+                   rdfs:range xsd:boolean ;
+                   rdfs:comment "Boolean. Whether the service was recommended or not." ;
+                   rdfs:label "hasRecommendation" .
+
+
+###  http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasSpecificValue
+:hasSpecificValue rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :SpecificRating ;
+                  rdfs:range [ rdf:type rdfs:Datatype ;
+                               owl:onDatatype xsd:decimal ;
+                               owl:withRestrictions ( [ xsd:minInclusive 1.0
+                                                      ]
+                                                      [ xsd:maxInclusive 5.0
+                                                      ]
+                                                    )
+                             ] ;
+                  rdfs:comment "Float [1.0, 5.0]. The score of a specific review." ;
+                  rdfs:label "hasSpecificValue" .
+
+
+###  http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasTitle
+:hasTitle rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Survey ;
+          rdfs:range xsd:string ;
+          rdfs:comment "String. The title of a review." ;
+          rdfs:label "hasTitle" .
+
+
+###  http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/isVerified
+:isVerified rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Survey ;
+            rdfs:range xsd:boolean ;
+            rdfs:comment "Boolean. Whether a review is verified or not." ;
+            rdfs:label "isVerified" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight#NamedTraveler
+:NamedTraveler rdf:type owl:Class ;
+               rdfs:subClassOf :Traveler ;
+               rdfs:comment "A traveler that has to have a name." ;
+               rdfs:label "NamedTraveler" .
+
+
+###  http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Aircraft
+:Aircraft rdf:type owl:Class ;
+          rdfs:comment "An aircraft model" ;
+          rdfs:label "Aircraft" .
+
+
+###  http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Airport
+:Airport rdf:type owl:Class ;
+         rdfs:subClassOf :Place ;
+         owl:disjointWith :Country ;
+         rdfs:comment "A registered point in which an aircraft can take off or land." ;
+         rdfs:label "Airport" ;
+         rdfs:sameAs "https://dbpedia.org/ontology/Airport" .
+
+
+###  http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/CabinStaffServiceRating
+:CabinStaffServiceRating rdf:type owl:Class ;
+                         rdfs:subClassOf :SpecificRating ;
+                         rdfs:comment "A rating of the cabin staff service during the flight." ;
+                         rdfs:label "CabinStaffServiceRating" .
+
+
+###  http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Country
+:Country rdf:type owl:Class ;
+         rdfs:subClassOf :Place ;
+         rdfs:comment "A political entity with ownership of a territory." ;
+         rdfs:label "Country" ;
+         rdfs:sameAs "https://dbpedia.org/ontology/Country" .
+
+
+###  http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/DirectFlight
+:DirectFlight rdf:type owl:Class ;
+              rdfs:subClassOf :Flight ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :hasStop ;
+                                owl:qualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                owl:onClass :Airport
+                              ] ;
+              owl:disjointWith :FlightWithStops ;
+              rdfs:comment "A flight without stops." ;
+              rdfs:label "DirectFlight" .
+
+
+###  http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Enumerator
+:Enumerator rdf:type owl:Class ;
+            rdfs:comment "Superclass for all enumerator datatypes" ;
+            rdfs:label "Enumerator" .
+
+
+###  http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Flight
+:Flight rdf:type owl:Class ;
+        rdfs:subClassOf [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasAircraft ;
+                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                          owl:onClass :Aircraft
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasDestination ;
+                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                          owl:onClass :Airport
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasOrigin ;
+                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                          owl:onClass :Airport
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasFlightDate ;
+                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                          owl:onDataRange xsd:dateTime
+                        ] ;
+        rdfs:comment "A flight. Includes aircraft type, date and involved airports." ;
+        rdfs:label "Flight" .
+
+
+###  http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/FlightWithStops
+:FlightWithStops rdf:type owl:Class ;
+                 rdfs:subClassOf :Flight ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :hasStop ;
+                                   owl:someValuesFrom :Airport
+                                 ] ;
+                 rdfs:comment "A flight with one or more stops." ;
+                 rdfs:label "FlightWithStops" .
+
+
+###  http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/FoodAndBeveragesRating
+:FoodAndBeveragesRating rdf:type owl:Class ;
+                        rdfs:subClassOf :SpecificRating ;
+                        rdfs:comment "A rating of the food and beverages offered in the flight." ;
+                        rdfs:label "FoodAndBeveragesRating" .
+
+
+###  http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/GeneralRating
+:GeneralRating rdf:type owl:Class ;
+               rdfs:subClassOf :Rating ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :hasGlobalValue ;
+                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onDataRange xsd:int
+                               ] ;
+               rdfs:comment "A general rating over a flight (integer from 0 to 10)" ;
+               rdfs:label "GeneralRating" .
+
+
+###  http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/GroundServiceRating
+:GroundServiceRating rdf:type owl:Class ;
+                     rdfs:subClassOf :SpecificRating ;
+                     rdfs:comment "A rating of the ground service before and after the flight." ;
+                     rdfs:label "GroundServiceRating" .
+
+
+###  http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/InflightEntertainmentRating
+:InflightEntertainmentRating rdf:type owl:Class ;
+                             rdfs:subClassOf :SpecificRating ;
+                             rdfs:comment "A rating of the enterteinment offered in the flight." ;
+                             rdfs:label "InflightEntertainmentRating" .
+
+
+###  http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Person
+:Person rdf:type owl:Class ;
+        rdfs:subClassOf [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasCountry ;
+                          owl:someValuesFrom :Country
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasName ;
+                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                          owl:onDataRange xsd:string
+                        ] ;
+        rdfs:comment "Generic Person type. A human being like you or me." ;
+        rdfs:label "Person" ;
+        rdfs:sameAs "https://dbpedia.org/ontology/Person" .
+
+
+###  http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Place
+:Place rdf:type owl:Class ;
+       rdfs:comment "Generic Place type. An area in physical space that's defined in some way." ;
+       rdfs:label "Place" .
+
+
+###  http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/QatarAirwaysSurvey
+:QatarAirwaysSurvey rdf:type owl:Class ;
+                    rdfs:subClassOf :Survey ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :hasAuthor ;
+                                      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                      owl:onClass :NamedTraveler
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :hasRating ;
+                                      owl:qualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                      owl:onClass :SpecificRating
+                                    ] ;
+                    owl:disjointWith :RyanairSurvey ;
+                    rdfs:comment "A survey for a Qatar Airways flight." ;
+                    rdfs:label "QatarAirwaysSurvey" .
+
+
+###  http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Rating
+:Rating rdf:type owl:Class ;
+        rdfs:comment "A way to express an evaluation of something through a numerical value." ;
+        rdfs:label "Rating" .
+
+
+###  http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/RyanairSurvey
+:RyanairSurvey rdf:type owl:Class ;
+               rdfs:subClassOf :Survey ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :hasRating ;
+                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onClass :CabinStaffServiceRating
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :hasRating ;
+                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onClass :FoodAndBeveragesRating
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :hasRating ;
+                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onClass :GroundServiceRating
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :hasRating ;
+                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onClass :InflightEntertainmentRating
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :hasRating ;
+                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onClass :SeatComfortRating
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :hasRating ;
+                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onClass :ValueForMoneyRating
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :hasRating ;
+                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onClass :WifiAndConnectivityRating
+                               ] ;
+               rdfs:comment "A survey for a Ryanair flight. It can include specific ratings." ;
+               rdfs:label "RyanairSurvey" .
+
+
+###  http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/SeatComfortRating
+:SeatComfortRating rdf:type owl:Class ;
+                   rdfs:subClassOf :SpecificRating ;
+                   rdfs:comment "A rating of how comfortable the seat was in the flight." ;
+                   rdfs:label "SeatComfortRating" .
+
+
+###  http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/SeatType
+:SeatType rdf:type owl:Class ;
+          rdfs:subClassOf :Enumerator ;
+          rdfs:comment "Type of seat: { BusinessClass, EconomyClass, FirstClass, PremiumEconomy }" ;
+          rdfs:label "SeatType" .
+
+
+###  http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/SpecificRating
+:SpecificRating rdf:type owl:Class ;
+                rdfs:subClassOf :Rating ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :hasSpecificValue ;
+                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onDataRange xsd:decimal
+                                ] ;
+                rdfs:comment "A rating over some aspect of a flight (float between 0 and 5)" ;
+                rdfs:label "SpecificRating" .
+
+
+###  http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Survey
+:Survey rdf:type owl:Class ;
+        rdfs:subClassOf [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasAuthor ;
+                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                          owl:onClass :Traveler
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasFlight ;
+                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                          owl:onClass :Flight
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasRating ;
+                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                          owl:onClass :GeneralRating
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasSeatType ;
+                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                          owl:onClass :SeatType
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasTravelerType ;
+                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                          owl:onClass :TravelerType
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasComment ;
+                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                          owl:onDataRange xsd:string
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasPublicationDate ;
+                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                          owl:onDataRange xsd:dateTime
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasRecommendation ;
+                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                          owl:onDataRange xsd:boolean
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasTitle ;
+                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                          owl:onDataRange xsd:string
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :isVerified ;
+                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                          owl:onDataRange xsd:boolean
+                        ] ;
+        rdfs:comment "A flight satisfaction survey. The central point of this ontology." ;
+        rdfs:label "Survey" .
+
+
+###  http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Traveler
+:Traveler rdf:type owl:Class ;
+          rdfs:subClassOf :Person ;
+          rdfs:comment "A person that has taken a flight." ;
+          rdfs:label "Traveler" .
+
+
+###  http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/TravelerType
+:TravelerType rdf:type owl:Class ;
+              rdfs:subClassOf :Enumerator ;
+              rdfs:comment "Type of Traveler: { Business, SoloLeisure, CoupleLeisure, FamilyLeisure }" ;
+              rdfs:label "TravelerType" .
+
+
+###  http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/ValueForMoneyRating
+:ValueForMoneyRating rdf:type owl:Class ;
+                     rdfs:subClassOf :SpecificRating ;
+                     rdfs:comment "A rating for the appropriateness of the flight's price with respect to the quality of the experience." ;
+                     rdfs:label "ValueForMoneyRating" .
+
+
+###  http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/WifiAndConnectivityRating
+:WifiAndConnectivityRating rdf:type owl:Class ;
+                           rdfs:subClassOf :SpecificRating ;
+                           rdfs:comment "A rating of the connectivity services of the flight." ;
+                           rdfs:label "WifiAndConnectivityRating" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight#A380
+:A380 rdf:type owl:NamedIndividual ,
+               :Aircraft ;
+      rdfs:comment "Sample aircraft: A380; for use in a Qatar Airways flight." ;
+      rdfs:label "A380" .
+
+
+###  http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight#AuthorQ
+:AuthorQ rdf:type owl:NamedIndividual ,
+                  :NamedTraveler ;
+         :hasCountry :UnitedKingdom ;
+         :hasName "Corto Maltés" ;
+         rdfs:comment "Sample NamedTraveler for use as an author of a Qatar Airways survey" ;
+         rdfs:label "AuthorQ" .
+
+
+###  http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight#AuthorR
+:AuthorR rdf:type owl:NamedIndividual ,
+                  :Traveler ;
+         :hasCountry :UnitedKingdom ;
+         rdfs:comment "Sample Traveler for use as an author of a Ryanair survey" ;
+         rdfs:label "AuthorR" .
+
+
+###  http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight#Boeing_737_900
+:Boeing_737_900 rdf:type owl:NamedIndividual ,
+                         :Aircraft ;
+                rdfs:comment "Sample aircraft: Boeing 737 900; for use in a Ryanair flight." ;
+                rdfs:label "Boeing 737 900" .
+
+
+###  http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight#CSSRating
+:CSSRating rdf:type owl:NamedIndividual ,
+                    :CabinStaffServiceRating ;
+           :hasSpecificValue 1.0 ;
+           rdfs:comment "Sample CabinStaffServiceRating, for use in a Ryanair survey." ;
+           rdfs:label "CSSRating" .
+
+
+###  http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight#Doha
+:Doha rdf:type owl:NamedIndividual ,
+               :Airport ;
+      rdfs:comment "Sample airport: Doha, for use as the origin of a Qatar Airways flight." ;
+      rdfs:label "Doha" .
+
+
+###  http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight#Faro
+:Faro rdf:type owl:NamedIndividual ,
+               :Airport ;
+      rdfs:comment "Sample airport: Faro, for use as the origin of a Ryanair flight." ;
+      rdfs:label "Faro" .
+
+
+###  http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight#FlightQ
+:FlightQ rdf:type owl:NamedIndividual ,
+                  :Flight ;
+         :hasAircraft :A380 ;
+         :hasDestination :Montreal ;
+         :hasOrigin :Doha ;
+         :hasFlightDate "2024-02-29T00:00:00.000"^^xsd:dateTime ;
+         rdfs:comment "Sample Qatar Airways flight." ;
+         rdfs:label "FlightQ" .
+
+
+###  http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight#FlightR
+:FlightR rdf:type owl:NamedIndividual ,
+                  :Flight ;
+         :hasAircraft :Boeing_737_900 ;
+         :hasDestination :Luton ;
+         :hasOrigin :Faro ;
+         :hasFlightDate "2024-02-03T00:00:00.000"^^xsd:dateTime ;
+         rdfs:comment "Sample Ryanair flight." ;
+         rdfs:label "FlightR" .
+
+
+###  http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight#GRatingQ
+:GRatingQ rdf:type owl:NamedIndividual ,
+                   :GeneralRating ;
+          :hasGlobalValue "5"^^xsd:int ;
+          rdfs:comment "Sample GeneralRating, for use in a Qatar Airways survey." ;
+          rdfs:label "GRatingQ" .
+
+
+###  http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight#GRatingR
+:GRatingR rdf:type owl:NamedIndividual ,
+                   :GeneralRating ;
+          :hasGlobalValue "1"^^xsd:int ;
+          rdfs:comment "Sample GeneralRating, for use in a Ryanair survey." ;
+          rdfs:label "GRatingR" .
+
+
+###  http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight#GSRating
+:GSRating rdf:type owl:NamedIndividual ,
+                   :GroundServiceRating ;
+          :hasSpecificValue 3.0 ;
+          rdfs:comment "Sample GroundServiceRating, for use in a Ryanair survey." ;
+          rdfs:label "GSRating" .
+
+
+###  http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight#IERating
+:IERating rdf:type owl:NamedIndividual ,
+                   :InflightEntertainmentRating ;
+          :hasSpecificValue 2.0 ;
+          rdfs:comment "Sample InflightEntertainmentRating, for use in a Ryanair survey." ;
+          rdfs:label "IERating" .
+
+
+###  http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight#Luton
+:Luton rdf:type owl:NamedIndividual ,
+                :Airport ;
+       rdfs:comment "Sample airport: Luton, for use as the destination of a Ryanair flight." ;
+       rdfs:label "Luton" .
+
+
+###  http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight#Montreal
+:Montreal rdf:type owl:NamedIndividual ,
+                   :Airport ;
+          rdfs:comment "Sample airport: Montreal, for use as the destination of a Qatar Airways flight." ;
+          rdfs:label "Montreal" .
+
+
+###  http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight#SCRating
+:SCRating rdf:type owl:NamedIndividual ,
+                   :SeatComfortRating ;
+          :hasSpecificValue 1.0 ;
+          rdfs:comment "Sample SeatComfortRating, for use in a Ryanair survey." ;
+          rdfs:label "SCRating" .
+
+
+###  http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight#SurveyQ
+:SurveyQ rdf:type owl:NamedIndividual ,
+                  :QatarAirwaysSurvey ;
+         :hasAuthor :AuthorQ ;
+         :hasFlight :FlightQ ;
+         :hasRating :GRatingQ ;
+         :hasSeatType :EconomyClass ;
+         :hasTravelerType :Business ;
+         :hasComment "Boats are way cooler than planes." ;
+         :hasPublicationDate "2024-02-29T00:00:00.000"^^xsd:dateTime ;
+         :hasRecommendation "false"^^xsd:boolean ;
+         :hasTitle "A bit underwhelming" ;
+         :isVerified "true"^^xsd:boolean ;
+         rdfs:comment "Sample Qatar Airways survey" ;
+         rdfs:label "SurveyQ" .
+
+
+###  http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight#SurveyR
+:SurveyR rdf:type owl:NamedIndividual ,
+                  :RyanairSurvey ;
+         :hasAuthor :AuthorR ;
+         :hasFlight :FlightR ;
+         :hasRating :CSSRating ,
+                    :GRatingR ,
+                    :GSRating ,
+                    :IERating ,
+                    :SCRating ,
+                    :VFMRating ;
+         :hasSeatType :EconomyClass ;
+         :hasTravelerType :SoloLeisure ;
+         :hasComment "They had us flapping our arms during the whole trip in order to help the plane stay in the air. Would NOT recommend." ;
+         :hasPublicationDate "2024-02-03T00:00:00.000"^^xsd:dateTime ;
+         :hasRecommendation "false"^^xsd:boolean ;
+         :hasTitle "A gang of cattle thieves" ;
+         :isVerified "false"^^xsd:boolean ;
+         rdfs:comment "Sample Ryanair survey" ;
+         rdfs:label "SurveyR" .
+
+
+###  http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight#UnitedKingdom
+:UnitedKingdom rdf:type owl:NamedIndividual ,
+                        :Country ;
+               rdfs:comment "Sample country: UnitedKingdom, for use as both travelers' country." ;
+               rdfs:label "UnitedKingdom" .
+
+
+###  http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight#VFMRating
+:VFMRating rdf:type owl:NamedIndividual ,
+                    :ValueForMoneyRating ;
+           :hasSpecificValue 1.0 ;
+           rdfs:comment "Sample ValueForMoneyRating, for use in a Ryanair survey." ;
+           rdfs:label "VFMRating" .
+
+
+###  http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Business
+:Business rdf:type owl:NamedIndividual ,
+                   :TravelerType ;
+          rdfs:comment "TravelerType: Business" ;
+          rdfs:label "Business" .
+
+
+###  http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/BusinessClass
+:BusinessClass rdf:type owl:NamedIndividual ,
+                        :SeatType ;
+               rdfs:comment "SeatType: Business Class" ;
+               rdfs:label "BusinessClass" .
+
+
+###  http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/CoupleLeisure
+:CoupleLeisure rdf:type owl:NamedIndividual ,
+                        :TravelerType ;
+               rdfs:comment "TravelerType: CoupleLeisure" ;
+               rdfs:label "CoupeLeisure" .
+
+
+###  http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/EconomyClass
+:EconomyClass rdf:type owl:NamedIndividual ,
+                       :SeatType ;
+              rdfs:comment "SeatType: EconomyClass" ;
+              rdfs:label "EconomyClass" .
+
+
+###  http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/FamilyLeisure
+:FamilyLeisure rdf:type owl:NamedIndividual ,
+                        :TravelerType ;
+               rdfs:comment "TravelerType: FamilyLeisure" ;
+               rdfs:label "FamilyLeisure" .
+
+
+###  http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/FirstClass
+:FirstClass rdf:type owl:NamedIndividual ,
+                     :SeatType ;
+            rdfs:comment "SeatType: FirstClass" ;
+            rdfs:label "FirstClass" .
+
+
+###  http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/PremiumEconomy
+:PremiumEconomy rdf:type owl:NamedIndividual ,
+                         :SeatType ;
+                rdfs:comment "SeatType: PremiumEconomy" ;
+                rdfs:label "PremiumEconomy" .
+
+
+###  http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/SoloLeisure
+:SoloLeisure rdf:type owl:NamedIndividual ,
+                      :TravelerType ;
+             rdfs:comment "TravelerType: SoloLeisure" ;
+             rdfs:label "SoloLeisure" .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Aircraft
+                :Flight
+                :Person
+                :Place
+                :Rating
+                :Survey
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :CabinStaffServiceRating
+                :FoodAndBeveragesRating
+                :GeneralRating
+                :GroundServiceRating
+                :InflightEntertainmentRating
+                :SeatComfortRating
+                :ValueForMoneyRating
+                :WifiAndConnectivityRating
+              )
+] .
+
+
+#################################################################
+#    Rules
+#################################################################
+
+<urn:swrl:var#t> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#gr> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#gv> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :NamedTraveler ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#t>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasName ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#t> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> ""
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasName ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#t> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> "Anonymous"
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :GeneralRating ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#gr>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasGlobalValue ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#gr> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#gv>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> ;
+                                                                             <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                          rdf:first <urn:swrl:var#gv> ;
+                                                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first 10 ;
+                                                                                                                                     rdf:rest rdf:nil
+                                                                                                                                   ]
+                                                                                                                        ]
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasGlobalValue ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#gr> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> 10
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :GeneralRating ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#gr>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasGlobalValue ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#gr> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#gv>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThan> ;
+                                                                             <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                          rdf:first <urn:swrl:var#gv> ;
+                                                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first 1 ;
+                                                                                                                                     rdf:rest rdf:nil
+                                                                                                                                   ]
+                                                                                                                        ]
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasGlobalValue ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#gr> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> 1
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi

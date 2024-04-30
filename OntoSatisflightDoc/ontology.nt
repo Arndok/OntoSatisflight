@@ -1,0 +1,838 @@
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight> <http://www.w3.org/2000/01/rdf-schema#comment> "An ontology for flight satisfaction surveys" .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight> <http://www.w3.org/2000/01/rdf-schema#label> "OntoSatisflight" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2000/01/rdf-schema#sameAs
+<http://www.w3.org/2000/01/rdf-schema#sameAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasAircraft
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasAircraft> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasAircraft> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Flight> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasAircraft> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Aircraft> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasAircraft> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a flight with the aircraft that's flown it." .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasAircraft> <http://www.w3.org/2000/01/rdf-schema#label> "hasAircraft" .
+# 
+# http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasAirport
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasAirport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasAirport> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/isAirportOf> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasAirport> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Flight> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasAirport> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Airport> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasAirport> <http://www.w3.org/2000/01/rdf-schema#comment> "Superclass for hasOrigin, hasDestination and hasStop." .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasAirport> <http://www.w3.org/2000/01/rdf-schema#label> "hasAirport" .
+# 
+# http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasAuthor
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasAuthor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasAuthor> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/isAuthorOf> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasAuthor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Survey> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasAuthor> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Traveler> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasAuthor> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a survey with its author." .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasAuthor> <http://www.w3.org/2000/01/rdf-schema#label> "hasAuthor" .
+# 
+# http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasCountry
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasCountry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasCountry> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/isCountryOf> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasCountry> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Person> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasCountry> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Country> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasCountry> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a person with its nationality or nationalities." .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasCountry> <http://www.w3.org/2000/01/rdf-schema#label> "hasCountry" .
+# 
+# http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasDestination
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasDestination> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasDestination> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasAirport> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasDestination> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/isDestinationOf> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasDestination> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasDestination> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Flight> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasDestination> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Airport> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasDestination> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a flight with the airport it's arrived in." .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasDestination> <http://www.w3.org/2000/01/rdf-schema#label> "hasDestination" .
+# 
+# http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasFlight
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasFlight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasFlight> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Survey> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasFlight> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Flight> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasFlight> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a survey with its associated flight." .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasFlight> <http://www.w3.org/2000/01/rdf-schema#label> "hasFlight" .
+# 
+# http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasOrigin
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasOrigin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasOrigin> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasAirport> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasOrigin> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/isOriginOf> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasOrigin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasOrigin> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Flight> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasOrigin> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Airport> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasOrigin> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a flight with the airport it's departed from." .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasOrigin> <http://www.w3.org/2000/01/rdf-schema#label> "hasOrigin" .
+# 
+# http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasRating
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasRating> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Survey> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasRating> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Rating> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasRating> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a survey with its associated rating or ratings." .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasRating> <http://www.w3.org/2000/01/rdf-schema#label> "hasRating" .
+# 
+# http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasSeatType
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasSeatType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasSeatType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Survey> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasSeatType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/SeatType> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasSeatType> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a survey with the type of seat that its traveler has sat on during the flight." .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasSeatType> <http://www.w3.org/2000/01/rdf-schema#label> "hasSeatType" .
+# 
+# http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasStop
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasStop> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasStop> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasAirport> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasStop> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/isStopOf> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasStop> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Flight> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasStop> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Airport> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasStop> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a flight with the airport or airports it's stopped in, if any." .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasStop> <http://www.w3.org/2000/01/rdf-schema#label> "hasStop" .
+# 
+# http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasTravelerType
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasTravelerType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasTravelerType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Survey> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasTravelerType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/TravelerType> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasTravelerType> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a survey with the type of traveler that has answered it." .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasTravelerType> <http://www.w3.org/2000/01/rdf-schema#label> "hasTravelerType" .
+# 
+# http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/isAirportOf
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/isAirportOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/isAirportOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Airport> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/isAirportOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Flight> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/isAirportOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of hasAirport. Superclass for isOriginOf, isDestinationOf and isStopOf." .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/isAirportOf> <http://www.w3.org/2000/01/rdf-schema#label> "isAirportOf" .
+# 
+# http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/isAuthorOf
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/isAuthorOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/isAuthorOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Traveler> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/isAuthorOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Survey> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/isAuthorOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of hasAuthor. Relates a traveler with the surveys they've answered." .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/isAuthorOf> <http://www.w3.org/2000/01/rdf-schema#label> "isAuthorOf" .
+# 
+# http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/isCountryOf
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/isCountryOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/isCountryOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Country> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/isCountryOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Person> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/isCountryOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of hasCountry. Relates a country to every airport that's in it." .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/isCountryOf> <http://www.w3.org/2000/01/rdf-schema#label> "isCountryOf" .
+# 
+# http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/isDestinationOf
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/isDestinationOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/isDestinationOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/isAirportOf> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/isDestinationOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/isDestinationOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Airport> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/isDestinationOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Flight> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/isDestinationOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of hasDestination. Relates an airport with every flight that arrives in there." .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/isDestinationOf> <http://www.w3.org/2000/01/rdf-schema#label> "isDestinationOf" .
+# 
+# http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/isOriginOf
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/isOriginOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/isOriginOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/isAirportOf> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/isOriginOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/isOriginOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Airport> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/isOriginOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Flight> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/isOriginOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of hasOrigin. Relates an airport with every flight that departs from there." .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/isOriginOf> <http://www.w3.org/2000/01/rdf-schema#label> "isOriginOf" .
+# 
+# http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/isStopOf
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/isStopOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/isStopOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/isAirportOf> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/isStopOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Airport> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/isStopOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Flight> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/isStopOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of hasStop. Relates an airport with every flight that stops there." .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/isStopOf> <http://www.w3.org/2000/01/rdf-schema#label> "isStopOf" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasComment
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasComment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasComment> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Survey> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasComment> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasComment> <http://www.w3.org/2000/01/rdf-schema#comment> "String. The body of the review." .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasComment> <http://www.w3.org/2000/01/rdf-schema#label> "hasComment" .
+# 
+# http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasFlightDate
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasFlightDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasFlightDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Flight> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasFlightDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasFlightDate> <http://www.w3.org/2000/01/rdf-schema#comment> "DateTime. The date of the flight." .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasFlightDate> <http://www.w3.org/2000/01/rdf-schema#label> "hasFlightDate" .
+# 
+# http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasGlobalValue
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasGlobalValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasGlobalValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/GeneralRating> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasGlobalValue> <http://www.w3.org/2000/01/rdf-schema#range> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid3 .
+_:genid3 <http://www.w3.org/2001/XMLSchema#maxInclusive> "10"^^<http://www.w3.org/2001/XMLSchema#int> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid5 .
+_:genid5 <http://www.w3.org/2001/XMLSchema#minInclusive> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid1 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#int> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasGlobalValue> <http://www.w3.org/2000/01/rdf-schema#comment> "Integer [1, 10]. The global score of a review." .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasGlobalValue> <http://www.w3.org/2000/01/rdf-schema#label> "hasGlobalValue" .
+# 
+# http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasName
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Person> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasName> <http://www.w3.org/2000/01/rdf-schema#comment> "String. The name of a person." .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasName> <http://www.w3.org/2000/01/rdf-schema#label> "hasName" .
+# 
+# http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasPublicationDate
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasPublicationDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasPublicationDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Survey> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasPublicationDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasPublicationDate> <http://www.w3.org/2000/01/rdf-schema#comment> "DateTime. The publication date of a review." .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasPublicationDate> <http://www.w3.org/2000/01/rdf-schema#label> "hasPublicationDate" .
+# 
+# http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasRecommendation
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasRecommendation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasRecommendation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Survey> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasRecommendation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasRecommendation> <http://www.w3.org/2000/01/rdf-schema#comment> "Boolean. Whether the service was recommended or not." .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasRecommendation> <http://www.w3.org/2000/01/rdf-schema#label> "hasRecommendation" .
+# 
+# http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasSpecificValue
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasSpecificValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasSpecificValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/SpecificRating> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasSpecificValue> <http://www.w3.org/2000/01/rdf-schema#range> _:genid6 .
+_:genid6 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid8 .
+_:genid8 <http://www.w3.org/2001/XMLSchema#maxInclusive> "5.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid10 .
+_:genid10 <http://www.w3.org/2001/XMLSchema#minInclusive> "1.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasSpecificValue> <http://www.w3.org/2000/01/rdf-schema#comment> "Float [1.0, 5.0]. The score of a specific review." .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasSpecificValue> <http://www.w3.org/2000/01/rdf-schema#label> "hasSpecificValue" .
+# 
+# http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasTitle
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasTitle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasTitle> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Survey> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasTitle> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasTitle> <http://www.w3.org/2000/01/rdf-schema#comment> "String. The title of a review." .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasTitle> <http://www.w3.org/2000/01/rdf-schema#label> "hasTitle" .
+# 
+# http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/isVerified
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/isVerified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/isVerified> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Survey> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/isVerified> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/isVerified> <http://www.w3.org/2000/01/rdf-schema#comment> "Boolean. Whether a review is verified or not." .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/isVerified> <http://www.w3.org/2000/01/rdf-schema#label> "isVerified" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Aircraft
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Aircraft> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Aircraft> <http://www.w3.org/2000/01/rdf-schema#comment> "An aircraft model" .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Aircraft> <http://www.w3.org/2000/01/rdf-schema#label> "Aircraft" .
+# 
+# http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Airport
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Airport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Airport> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Place> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Airport> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Country> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Airport> <http://www.w3.org/2000/01/rdf-schema#comment> "A registered point in which an aircraft can take off or land." .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Airport> <http://www.w3.org/2000/01/rdf-schema#label> "Airport" .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Airport> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/ontology/Airport" .
+# 
+# http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/CabinStaffServiceRating
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/CabinStaffServiceRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/CabinStaffServiceRating> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/SpecificRating> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/CabinStaffServiceRating> <http://www.w3.org/2000/01/rdf-schema#comment> "A rating of the cabin staff service during the flight." .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/CabinStaffServiceRating> <http://www.w3.org/2000/01/rdf-schema#label> "CabinStaffServiceRating" .
+# 
+# http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Country
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Country> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Country> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Place> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Country> <http://www.w3.org/2000/01/rdf-schema#comment> "A political entity with ownership of a territory." .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Country> <http://www.w3.org/2000/01/rdf-schema#label> "Country" .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Country> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/ontology/Country" .
+# 
+# http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/DirectFlight
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/DirectFlight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/DirectFlight> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Flight> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/DirectFlight> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
+_:genid11 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Airport> .
+_:genid11 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasStop> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/DirectFlight> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/FlightWithStops> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/DirectFlight> <http://www.w3.org/2000/01/rdf-schema#comment> "A flight without stops." .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/DirectFlight> <http://www.w3.org/2000/01/rdf-schema#label> "DirectFlight" .
+# 
+# http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Enumerator
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Enumerator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Enumerator> <http://www.w3.org/2000/01/rdf-schema#comment> "Superclass for all enumerator datatypes" .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Enumerator> <http://www.w3.org/2000/01/rdf-schema#label> "Enumerator" .
+# 
+# http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Flight
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Flight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Flight> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid12 .
+_:genid12 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Aircraft> .
+_:genid12 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasAircraft> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Flight> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
+_:genid13 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Airport> .
+_:genid13 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasDestination> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Flight> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid14 .
+_:genid14 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Airport> .
+_:genid14 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasOrigin> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Flight> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid15 .
+_:genid15 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#dateTime> .
+_:genid15 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasFlightDate> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Flight> <http://www.w3.org/2000/01/rdf-schema#comment> "A flight. Includes aircraft type, date and involved airports." .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Flight> <http://www.w3.org/2000/01/rdf-schema#label> "Flight" .
+# 
+# http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/FlightWithStops
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/FlightWithStops> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/FlightWithStops> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Flight> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/FlightWithStops> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid16 .
+_:genid16 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Airport> .
+_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasStop> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/FlightWithStops> <http://www.w3.org/2000/01/rdf-schema#comment> "A flight with one or more stops." .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/FlightWithStops> <http://www.w3.org/2000/01/rdf-schema#label> "FlightWithStops" .
+# 
+# http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/FoodAndBeveragesRating
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/FoodAndBeveragesRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/FoodAndBeveragesRating> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/SpecificRating> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/FoodAndBeveragesRating> <http://www.w3.org/2000/01/rdf-schema#comment> "A rating of the food and beverages offered in the flight." .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/FoodAndBeveragesRating> <http://www.w3.org/2000/01/rdf-schema#label> "FoodAndBeveragesRating" .
+# 
+# http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/GeneralRating
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/GeneralRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/GeneralRating> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Rating> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/GeneralRating> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid17 .
+_:genid17 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#int> .
+_:genid17 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasGlobalValue> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/GeneralRating> <http://www.w3.org/2000/01/rdf-schema#comment> "A general rating over a flight (integer from 0 to 10)" .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/GeneralRating> <http://www.w3.org/2000/01/rdf-schema#label> "GeneralRating" .
+# 
+# http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/GroundServiceRating
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/GroundServiceRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/GroundServiceRating> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/SpecificRating> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/GroundServiceRating> <http://www.w3.org/2000/01/rdf-schema#comment> "A rating of the ground service before and after the flight." .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/GroundServiceRating> <http://www.w3.org/2000/01/rdf-schema#label> "GroundServiceRating" .
+# 
+# http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/InflightEntertainmentRating
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/InflightEntertainmentRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/InflightEntertainmentRating> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/SpecificRating> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/InflightEntertainmentRating> <http://www.w3.org/2000/01/rdf-schema#comment> "A rating of the enterteinment offered in the flight." .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/InflightEntertainmentRating> <http://www.w3.org/2000/01/rdf-schema#label> "InflightEntertainmentRating" .
+# 
+# http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/NamedTraveler
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/NamedTraveler> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/NamedTraveler> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Traveler> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/NamedTraveler> <http://www.w3.org/2000/01/rdf-schema#comment> "A traveler that has to have a name." .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/NamedTraveler> <http://www.w3.org/2000/01/rdf-schema#label> "NamedTraveler" .
+# 
+# http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Person
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid18 .
+_:genid18 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Country> .
+_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasCountry> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid19 .
+_:genid19 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid19 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid19 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasName> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Person> <http://www.w3.org/2000/01/rdf-schema#comment> "Generic Person type. A human being like you or me." .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Person> <http://www.w3.org/2000/01/rdf-schema#label> "Person" .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Person> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/ontology/Person" .
+# 
+# http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Place
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Place> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Place> <http://www.w3.org/2000/01/rdf-schema#comment> "Generic Place type. An area in physical space that's defined in some way." .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Place> <http://www.w3.org/2000/01/rdf-schema#label> "Place" .
+# 
+# http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/QatarAirwaysSurvey
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/QatarAirwaysSurvey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/QatarAirwaysSurvey> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Survey> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/QatarAirwaysSurvey> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid20 .
+_:genid20 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/NamedTraveler> .
+_:genid20 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid20 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasAuthor> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/QatarAirwaysSurvey> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid21 .
+_:genid21 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/SpecificRating> .
+_:genid21 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid21 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasRating> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/QatarAirwaysSurvey> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/RyanairSurvey> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/QatarAirwaysSurvey> <http://www.w3.org/2000/01/rdf-schema#comment> "A survey for a Qatar Airways flight." .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/QatarAirwaysSurvey> <http://www.w3.org/2000/01/rdf-schema#label> "QatarAirwaysSurvey" .
+# 
+# http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Rating
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Rating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Rating> <http://www.w3.org/2000/01/rdf-schema#comment> "A way to express an evaluation of something through a numerical value." .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Rating> <http://www.w3.org/2000/01/rdf-schema#label> "Rating" .
+# 
+# http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/RyanairSurvey
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/RyanairSurvey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/RyanairSurvey> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Survey> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/RyanairSurvey> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid22 .
+_:genid22 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/CabinStaffServiceRating> .
+_:genid22 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid22 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasRating> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/RyanairSurvey> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid23 .
+_:genid23 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/FoodAndBeveragesRating> .
+_:genid23 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid23 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasRating> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/RyanairSurvey> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid24 .
+_:genid24 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/GroundServiceRating> .
+_:genid24 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid24 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasRating> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/RyanairSurvey> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid25 .
+_:genid25 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/InflightEntertainmentRating> .
+_:genid25 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid25 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasRating> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/RyanairSurvey> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid26 .
+_:genid26 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/SeatComfortRating> .
+_:genid26 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid26 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasRating> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/RyanairSurvey> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid27 .
+_:genid27 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/ValueForMoneyRating> .
+_:genid27 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid27 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasRating> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/RyanairSurvey> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid28 .
+_:genid28 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/WifiAndConnectivityRating> .
+_:genid28 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid28 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasRating> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/RyanairSurvey> <http://www.w3.org/2000/01/rdf-schema#comment> "A survey for a Ryanair flight. It can include specific ratings." .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/RyanairSurvey> <http://www.w3.org/2000/01/rdf-schema#label> "RyanairSurvey" .
+# 
+# http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/SeatComfortRating
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/SeatComfortRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/SeatComfortRating> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/SpecificRating> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/SeatComfortRating> <http://www.w3.org/2000/01/rdf-schema#comment> "A rating of how comfortable the seat was in the flight." .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/SeatComfortRating> <http://www.w3.org/2000/01/rdf-schema#label> "SeatComfortRating" .
+# 
+# http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/SeatType
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/SeatType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/SeatType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Enumerator> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/SeatType> <http://www.w3.org/2000/01/rdf-schema#comment> "Type of seat: { BusinessClass, EconomyClass, FirstClass, PremiumEconomy }" .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/SeatType> <http://www.w3.org/2000/01/rdf-schema#label> "SeatType" .
+# 
+# http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/SpecificRating
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/SpecificRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/SpecificRating> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Rating> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/SpecificRating> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid29 .
+_:genid29 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid29 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid29 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasSpecificValue> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/SpecificRating> <http://www.w3.org/2000/01/rdf-schema#comment> "A rating over some aspect of a flight (float between 0 and 5)" .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/SpecificRating> <http://www.w3.org/2000/01/rdf-schema#label> "SpecificRating" .
+# 
+# http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Survey
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Survey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Survey> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid30 .
+_:genid30 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Traveler> .
+_:genid30 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid30 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasAuthor> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Survey> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid31 .
+_:genid31 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Flight> .
+_:genid31 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid31 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasFlight> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Survey> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid32 .
+_:genid32 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/GeneralRating> .
+_:genid32 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid32 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasRating> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Survey> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid33 .
+_:genid33 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/SeatType> .
+_:genid33 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid33 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasSeatType> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Survey> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid34 .
+_:genid34 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/TravelerType> .
+_:genid34 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid34 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasTravelerType> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Survey> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid35 .
+_:genid35 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid35 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid35 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasComment> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Survey> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid36 .
+_:genid36 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#dateTime> .
+_:genid36 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid36 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasPublicationDate> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Survey> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid37 .
+_:genid37 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid37 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid37 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasRecommendation> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Survey> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid38 .
+_:genid38 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid38 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid38 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasTitle> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Survey> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid39 .
+_:genid39 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid39 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid39 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/isVerified> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Survey> <http://www.w3.org/2000/01/rdf-schema#comment> "A flight satisfaction survey. The central point of this ontology." .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Survey> <http://www.w3.org/2000/01/rdf-schema#label> "Survey" .
+# 
+# http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Traveler
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Traveler> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Traveler> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Person> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Traveler> <http://www.w3.org/2000/01/rdf-schema#comment> "A person that has taken a flight." .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Traveler> <http://www.w3.org/2000/01/rdf-schema#label> "Traveler" .
+# 
+# http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/TravelerType
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/TravelerType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/TravelerType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Enumerator> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/TravelerType> <http://www.w3.org/2000/01/rdf-schema#comment> "Type of Traveler: { Business, SoloLeisure, CoupleLeisure, FamilyLeisure }" .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/TravelerType> <http://www.w3.org/2000/01/rdf-schema#label> "TravelerType" .
+# 
+# http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/ValueForMoneyRating
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/ValueForMoneyRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/ValueForMoneyRating> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/SpecificRating> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/ValueForMoneyRating> <http://www.w3.org/2000/01/rdf-schema#comment> "A rating for the appropriateness of the flight's price with respect to the quality of the experience." .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/ValueForMoneyRating> <http://www.w3.org/2000/01/rdf-schema#label> "ValueForMoneyRating" .
+# 
+# http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/WifiAndConnectivityRating
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/WifiAndConnectivityRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/WifiAndConnectivityRating> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/SpecificRating> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/WifiAndConnectivityRating> <http://www.w3.org/2000/01/rdf-schema#comment> "A rating of the connectivity services of the flight." .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/WifiAndConnectivityRating> <http://www.w3.org/2000/01/rdf-schema#label> "WifiAndConnectivityRating" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/A380
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/A380> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/A380> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Aircraft> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/A380> <http://www.w3.org/2000/01/rdf-schema#comment> "Sample aircraft: A380; for use in a Qatar Airways flight." .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/A380> <http://www.w3.org/2000/01/rdf-schema#label> "A380" .
+# 
+# http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/AuthorQ
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/AuthorQ> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/AuthorQ> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/NamedTraveler> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/AuthorQ> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasCountry> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/UnitedKingdom> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/AuthorQ> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasName> "Corto Maltés" .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/AuthorQ> <http://www.w3.org/2000/01/rdf-schema#comment> "Sample NamedTraveler for use as an author of a Qatar Airways survey" .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/AuthorQ> <http://www.w3.org/2000/01/rdf-schema#label> "AuthorQ" .
+# 
+# http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/AuthorR
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/AuthorR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/AuthorR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Traveler> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/AuthorR> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasCountry> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/UnitedKingdom> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/AuthorR> <http://www.w3.org/2000/01/rdf-schema#comment> "Sample Traveler for use as an author of a Ryanair survey" .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/AuthorR> <http://www.w3.org/2000/01/rdf-schema#label> "AuthorR" .
+# 
+# http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Boeing_737_900
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Boeing_737_900> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Boeing_737_900> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Aircraft> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Boeing_737_900> <http://www.w3.org/2000/01/rdf-schema#comment> "Sample aircraft: Boeing 737 900; for use in a Ryanair flight." .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Boeing_737_900> <http://www.w3.org/2000/01/rdf-schema#label> "Boeing 737 900" .
+# 
+# http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Business
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Business> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Business> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/TravelerType> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Business> <http://www.w3.org/2000/01/rdf-schema#comment> "TravelerType: Business" .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Business> <http://www.w3.org/2000/01/rdf-schema#label> "Business" .
+# 
+# http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/BusinessClass
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/BusinessClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/BusinessClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/SeatType> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/BusinessClass> <http://www.w3.org/2000/01/rdf-schema#comment> "SeatType: Business Class" .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/BusinessClass> <http://www.w3.org/2000/01/rdf-schema#label> "BusinessClass" .
+# 
+# http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/CSSRating
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/CSSRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/CSSRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/CabinStaffServiceRating> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/CSSRating> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasSpecificValue> "1.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/CSSRating> <http://www.w3.org/2000/01/rdf-schema#comment> "Sample CabinStaffServiceRating, for use in a Ryanair survey." .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/CSSRating> <http://www.w3.org/2000/01/rdf-schema#label> "CSSRating" .
+# 
+# http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/CoupleLeisure
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/CoupleLeisure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/CoupleLeisure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/TravelerType> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/CoupleLeisure> <http://www.w3.org/2000/01/rdf-schema#comment> "TravelerType: CoupleLeisure" .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/CoupleLeisure> <http://www.w3.org/2000/01/rdf-schema#label> "CoupeLeisure" .
+# 
+# http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Doha
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Doha> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Doha> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Airport> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Doha> <http://www.w3.org/2000/01/rdf-schema#comment> "Sample airport: Doha, for use as the origin of a Qatar Airways flight." .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Doha> <http://www.w3.org/2000/01/rdf-schema#label> "Doha" .
+# 
+# http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/EconomyClass
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/EconomyClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/EconomyClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/SeatType> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/EconomyClass> <http://www.w3.org/2000/01/rdf-schema#comment> "SeatType: EconomyClass" .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/EconomyClass> <http://www.w3.org/2000/01/rdf-schema#label> "EconomyClass" .
+# 
+# http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/FamilyLeisure
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/FamilyLeisure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/FamilyLeisure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/TravelerType> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/FamilyLeisure> <http://www.w3.org/2000/01/rdf-schema#comment> "TravelerType: FamilyLeisure" .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/FamilyLeisure> <http://www.w3.org/2000/01/rdf-schema#label> "FamilyLeisure" .
+# 
+# http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Faro
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Faro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Faro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Airport> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Faro> <http://www.w3.org/2000/01/rdf-schema#comment> "Sample airport: Faro, for use as the origin of a Ryanair flight." .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Faro> <http://www.w3.org/2000/01/rdf-schema#label> "Faro" .
+# 
+# http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/FirstClass
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/FirstClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/FirstClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/SeatType> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/FirstClass> <http://www.w3.org/2000/01/rdf-schema#comment> "SeatType: FirstClass" .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/FirstClass> <http://www.w3.org/2000/01/rdf-schema#label> "FirstClass" .
+# 
+# http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/FlightQ
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/FlightQ> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/FlightQ> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Flight> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/FlightQ> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasAircraft> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/A380> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/FlightQ> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasDestination> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Montreal> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/FlightQ> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasOrigin> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Doha> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/FlightQ> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasFlightDate> "2024-02-29T00:00:00.000"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/FlightQ> <http://www.w3.org/2000/01/rdf-schema#comment> "Sample Qatar Airways flight." .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/FlightQ> <http://www.w3.org/2000/01/rdf-schema#label> "FlightQ" .
+# 
+# http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/FlightR
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/FlightR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/FlightR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Flight> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/FlightR> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasAircraft> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Boeing_737_900> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/FlightR> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasDestination> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Luton> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/FlightR> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasOrigin> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Faro> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/FlightR> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasFlightDate> "2024-02-03T00:00:00.000"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/FlightR> <http://www.w3.org/2000/01/rdf-schema#comment> "Sample Ryanair flight." .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/FlightR> <http://www.w3.org/2000/01/rdf-schema#label> "FlightR" .
+# 
+# http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/GRatingQ
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/GRatingQ> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/GRatingQ> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/GeneralRating> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/GRatingQ> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasGlobalValue> "5"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/GRatingQ> <http://www.w3.org/2000/01/rdf-schema#comment> "Sample GeneralRating, for use in a Qatar Airways survey." .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/GRatingQ> <http://www.w3.org/2000/01/rdf-schema#label> "GRatingQ" .
+# 
+# http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/GRatingR
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/GRatingR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/GRatingR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/GeneralRating> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/GRatingR> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasGlobalValue> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/GRatingR> <http://www.w3.org/2000/01/rdf-schema#comment> "Sample GeneralRating, for use in a Ryanair survey." .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/GRatingR> <http://www.w3.org/2000/01/rdf-schema#label> "GRatingR" .
+# 
+# http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/GSRating
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/GSRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/GSRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/GroundServiceRating> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/GSRating> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasSpecificValue> "3.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/GSRating> <http://www.w3.org/2000/01/rdf-schema#comment> "Sample GroundServiceRating, for use in a Ryanair survey." .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/GSRating> <http://www.w3.org/2000/01/rdf-schema#label> "GSRating" .
+# 
+# http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/IERating
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/IERating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/IERating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/InflightEntertainmentRating> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/IERating> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasSpecificValue> "2.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/IERating> <http://www.w3.org/2000/01/rdf-schema#comment> "Sample InflightEntertainmentRating, for use in a Ryanair survey." .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/IERating> <http://www.w3.org/2000/01/rdf-schema#label> "IERating" .
+# 
+# http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Luton
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Luton> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Luton> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Airport> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Luton> <http://www.w3.org/2000/01/rdf-schema#comment> "Sample airport: Luton, for use as the destination of a Ryanair flight." .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Luton> <http://www.w3.org/2000/01/rdf-schema#label> "Luton" .
+# 
+# http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Montreal
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Montreal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Montreal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Airport> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Montreal> <http://www.w3.org/2000/01/rdf-schema#comment> "Sample airport: Montreal, for use as the destination of a Qatar Airways flight." .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Montreal> <http://www.w3.org/2000/01/rdf-schema#label> "Montreal" .
+# 
+# http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/PremiumEconomy
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/PremiumEconomy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/PremiumEconomy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/SeatType> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/PremiumEconomy> <http://www.w3.org/2000/01/rdf-schema#comment> "SeatType: PremiumEconomy" .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/PremiumEconomy> <http://www.w3.org/2000/01/rdf-schema#label> "PremiumEconomy" .
+# 
+# http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/SCRating
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/SCRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/SCRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/SeatComfortRating> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/SCRating> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasSpecificValue> "1.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/SCRating> <http://www.w3.org/2000/01/rdf-schema#comment> "Sample SeatComfortRating, for use in a Ryanair survey." .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/SCRating> <http://www.w3.org/2000/01/rdf-schema#label> "SCRating" .
+# 
+# http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/SoloLeisure
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/SoloLeisure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/SoloLeisure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/TravelerType> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/SoloLeisure> <http://www.w3.org/2000/01/rdf-schema#comment> "TravelerType: SoloLeisure" .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/SoloLeisure> <http://www.w3.org/2000/01/rdf-schema#label> "SoloLeisure" .
+# 
+# http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/SurveyQ
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/SurveyQ> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/SurveyQ> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/QatarAirwaysSurvey> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/SurveyQ> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasAuthor> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/AuthorQ> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/SurveyQ> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasFlight> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/FlightQ> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/SurveyQ> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasRating> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/GRatingQ> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/SurveyQ> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasSeatType> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/EconomyClass> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/SurveyQ> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasTravelerType> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Business> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/SurveyQ> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasComment> "Boats are way cooler than planes." .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/SurveyQ> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasPublicationDate> "2024-02-29T00:00:00.000"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/SurveyQ> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasRecommendation> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/SurveyQ> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasTitle> "A bit underwhelming" .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/SurveyQ> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/isVerified> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/SurveyQ> <http://www.w3.org/2000/01/rdf-schema#comment> "Sample Qatar Airways survey" .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/SurveyQ> <http://www.w3.org/2000/01/rdf-schema#label> "SurveyQ" .
+# 
+# http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/SurveyR
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/SurveyR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/SurveyR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/RyanairSurvey> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/SurveyR> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasAuthor> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/AuthorR> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/SurveyR> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasFlight> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/FlightR> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/SurveyR> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasRating> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/CSSRating> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/SurveyR> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasRating> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/GRatingR> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/SurveyR> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasRating> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/GSRating> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/SurveyR> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasRating> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/IERating> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/SurveyR> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasRating> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/SCRating> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/SurveyR> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasRating> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/VFMRating> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/SurveyR> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasSeatType> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/EconomyClass> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/SurveyR> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasTravelerType> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/SoloLeisure> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/SurveyR> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasComment> "They had us flapping our arms during the whole trip in order to help the plane stay in the air. Would NOT recommend." .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/SurveyR> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasPublicationDate> "2024-02-03T00:00:00.000"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/SurveyR> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasRecommendation> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/SurveyR> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasTitle> "A gang of cattle thieves" .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/SurveyR> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/isVerified> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/SurveyR> <http://www.w3.org/2000/01/rdf-schema#comment> "Sample Ryanair survey" .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/SurveyR> <http://www.w3.org/2000/01/rdf-schema#label> "SurveyR" .
+# 
+# http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/UnitedKingdom
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/UnitedKingdom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/UnitedKingdom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Country> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/UnitedKingdom> <http://www.w3.org/2000/01/rdf-schema#comment> "Sample country: UnitedKingdom, for use as both travelers' country." .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/UnitedKingdom> <http://www.w3.org/2000/01/rdf-schema#label> "UnitedKingdom" .
+# 
+# http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/VFMRating
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/VFMRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/VFMRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/ValueForMoneyRating> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/VFMRating> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasSpecificValue> "1.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/VFMRating> <http://www.w3.org/2000/01/rdf-schema#comment> "Sample ValueForMoneyRating, for use in a Ryanair survey." .
+<http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/VFMRating> <http://www.w3.org/2000/01/rdf-schema#label> "VFMRating" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid40 <http://www.w3.org/2002/07/owl#members> _:genid46 .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid45 .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid44 .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid43 .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid42 .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid41 .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Survey> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Rating> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Place> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Person> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Flight> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Aircraft> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid47 <http://www.w3.org/2002/07/owl#members> _:genid55 .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid54 .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid53 .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid52 .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid51 .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid50 .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid49 .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid48 .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/WifiAndConnectivityRating> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/ValueForMoneyRating> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/SeatComfortRating> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/InflightEntertainmentRating> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/GroundServiceRating> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/GeneralRating> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/FoodAndBeveragesRating> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/CabinStaffServiceRating> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

@@ -1,0 +1,1894 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight" ],
+    "iri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight",
+    "labels" : {
+      "undefined" : "OntoSatisflight"
+    },
+    "comments" : {
+      "undefined" : "An ontology for flight satisfaction surveys"
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "58",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "52",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "59",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "61",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "64",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "70",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "47",
+    "type" : "owl:Class"
+  }, {
+    "id" : "79",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "48",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "72",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "112",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "11",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "26",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "80",
+    "type" : "owl:Class"
+  }, {
+    "id" : "49",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "115",
+    "type" : "owl:Class"
+  }, {
+    "id" : "68",
+    "type" : "owl:Class"
+  }, {
+    "id" : "41",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Rating",
+    "baseIri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Rating",
+      "undefined" : "Rating"
+    },
+    "subClasses" : [ "9", "1" ],
+    "comment" : {
+      "undefined" : "A way to express an evaluation of something through a numerical value."
+    },
+    "attributes" : [ "external" ],
+    "id" : "8"
+  }, {
+    "iri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/WifiAndConnectivityRating",
+    "baseIri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "WifiAndConnectivityRating",
+      "undefined" : "WifiAndConnectivityRating"
+    },
+    "comment" : {
+      "undefined" : "A rating of the connectivity services of the flight."
+    },
+    "attributes" : [ "external" ],
+    "id" : "19",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Person",
+    "baseIri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight",
+    "instances" : 0,
+    "annotations" : {
+      "sameAs" : [ {
+        "identifier" : "sameAs",
+        "language" : "undefined",
+        "value" : "https://dbpedia.org/ontology/Person",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Person",
+      "undefined" : "Person"
+    },
+    "subClasses" : [ "41" ],
+    "comment" : {
+      "undefined" : "Generic Person type. A human being like you or me."
+    },
+    "attributes" : [ "external" ],
+    "id" : "16"
+  }, {
+    "iri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Survey",
+    "baseIri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Survey",
+      "undefined" : "Survey"
+    },
+    "subClasses" : [ "48", "49" ],
+    "comment" : {
+      "undefined" : "A flight satisfaction survey. The central point of this ontology."
+    },
+    "attributes" : [ "external" ],
+    "id" : "4"
+  }, {
+    "iri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Country",
+    "baseIri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight",
+    "instances" : 0,
+    "annotations" : {
+      "sameAs" : [ {
+        "identifier" : "sameAs",
+        "language" : "undefined",
+        "value" : "https://dbpedia.org/ontology/Country",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Country",
+      "undefined" : "Country"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/UnitedKingdom",
+      "baseIri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight",
+      "comment" : {
+        "undefined" : "Sample country: UnitedKingdom, for use as both travelers' country."
+      },
+      "labels" : {
+        "IRI-based" : "UnitedKingdom",
+        "undefined" : "UnitedKingdom"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "A political entity with ownership of a territory."
+    },
+    "attributes" : [ "external" ],
+    "id" : "15",
+    "superClasses" : [ "47" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "58",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "52",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "59",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/GeneralRating",
+    "baseIri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "GeneralRating",
+      "undefined" : "GeneralRating"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/GRatingR",
+      "baseIri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight",
+      "comment" : {
+        "undefined" : "Sample GeneralRating, for use in a Ryanair survey."
+      },
+      "labels" : {
+        "IRI-based" : "GRatingR",
+        "undefined" : "GRatingR"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/GRatingQ",
+      "baseIri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight",
+      "comment" : {
+        "undefined" : "Sample GeneralRating, for use in a Qatar Airways survey."
+      },
+      "labels" : {
+        "IRI-based" : "GRatingQ",
+        "undefined" : "GRatingQ"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "A general rating over a flight (integer from 0 to 10)"
+    },
+    "attributes" : [ "external" ],
+    "id" : "1",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/SeatComfortRating",
+    "baseIri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SeatComfortRating",
+      "undefined" : "SeatComfortRating"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/SCRating",
+      "baseIri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight",
+      "comment" : {
+        "undefined" : "Sample SeatComfortRating, for use in a Ryanair survey."
+      },
+      "labels" : {
+        "IRI-based" : "SCRating",
+        "undefined" : "SCRating"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "A rating of how comfortable the seat was in the flight."
+    },
+    "attributes" : [ "external" ],
+    "id" : "28",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/NamedTraveler",
+    "baseIri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NamedTraveler",
+      "undefined" : "NamedTraveler"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/AuthorQ",
+      "baseIri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight",
+      "comment" : {
+        "undefined" : "Sample NamedTraveler for use as an author of a Qatar Airways survey"
+      },
+      "labels" : {
+        "IRI-based" : "AuthorQ",
+        "undefined" : "AuthorQ"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "A traveler that has to have a name."
+    },
+    "attributes" : [ "external" ],
+    "id" : "61",
+    "superClasses" : [ "41" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "24",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "64",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/GroundServiceRating",
+    "baseIri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "GroundServiceRating",
+      "undefined" : "GroundServiceRating"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/GSRating",
+      "baseIri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight",
+      "comment" : {
+        "undefined" : "Sample GroundServiceRating, for use in a Ryanair survey."
+      },
+      "labels" : {
+        "IRI-based" : "GSRating",
+        "undefined" : "GSRating"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "A rating of the ground service before and after the flight."
+    },
+    "attributes" : [ "external" ],
+    "id" : "13",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/DirectFlight",
+    "baseIri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DirectFlight",
+      "undefined" : "DirectFlight"
+    },
+    "comment" : {
+      "undefined" : "A flight without stops."
+    },
+    "attributes" : [ "external" ],
+    "id" : "70",
+    "superClasses" : [ "23" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/SpecificRating",
+    "baseIri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SpecificRating",
+      "undefined" : "SpecificRating"
+    },
+    "subClasses" : [ "19", "28", "26", "13", "30", "18", "2" ],
+    "comment" : {
+      "undefined" : "A rating over some aspect of a flight (float between 0 and 5)"
+    },
+    "attributes" : [ "external" ],
+    "id" : "9",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Place",
+    "baseIri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Place",
+      "undefined" : "Place"
+    },
+    "subClasses" : [ "35", "15" ],
+    "comment" : {
+      "undefined" : "Generic Place type. An area in physical space that's defined in some way."
+    },
+    "attributes" : [ "external" ],
+    "id" : "47"
+  }, {
+    "iri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/TravelerType",
+    "baseIri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TravelerType",
+      "undefined" : "TravelerType"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Business",
+      "baseIri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight",
+      "comment" : {
+        "undefined" : "TravelerType: Business"
+      },
+      "labels" : {
+        "IRI-based" : "Business",
+        "undefined" : "Business"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/FamilyLeisure",
+      "baseIri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight",
+      "comment" : {
+        "undefined" : "TravelerType: FamilyLeisure"
+      },
+      "labels" : {
+        "IRI-based" : "FamilyLeisure",
+        "undefined" : "FamilyLeisure"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/CoupleLeisure",
+      "baseIri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight",
+      "comment" : {
+        "undefined" : "TravelerType: CoupleLeisure"
+      },
+      "labels" : {
+        "IRI-based" : "CoupleLeisure",
+        "undefined" : "CoupeLeisure"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/SoloLeisure",
+      "baseIri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight",
+      "comment" : {
+        "undefined" : "TravelerType: SoloLeisure"
+      },
+      "labels" : {
+        "IRI-based" : "SoloLeisure",
+        "undefined" : "SoloLeisure"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Type of Traveler: { Business, SoloLeisure, CoupleLeisure, FamilyLeisure }"
+    },
+    "attributes" : [ "external" ],
+    "id" : "79",
+    "superClasses" : [ "80" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/FoodAndBeveragesRating",
+    "baseIri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FoodAndBeveragesRating",
+      "undefined" : "FoodAndBeveragesRating"
+    },
+    "comment" : {
+      "undefined" : "A rating of the food and beverages offered in the flight."
+    },
+    "attributes" : [ "external" ],
+    "id" : "18",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/RyanairSurvey",
+    "baseIri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RyanairSurvey",
+      "undefined" : "RyanairSurvey"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/SurveyR",
+      "baseIri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight",
+      "comment" : {
+        "undefined" : "Sample Ryanair survey"
+      },
+      "labels" : {
+        "IRI-based" : "SurveyR",
+        "undefined" : "SurveyR"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "A survey for a Ryanair flight. It can include specific ratings."
+    },
+    "attributes" : [ "external" ],
+    "id" : "48",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "5",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Airport",
+    "baseIri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight",
+    "instances" : 0,
+    "annotations" : {
+      "sameAs" : [ {
+        "identifier" : "sameAs",
+        "language" : "undefined",
+        "value" : "https://dbpedia.org/ontology/Airport",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Airport",
+      "undefined" : "Airport"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Montreal",
+      "baseIri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight",
+      "comment" : {
+        "undefined" : "Sample airport: Montreal, for use as the destination of a Qatar Airways flight."
+      },
+      "labels" : {
+        "IRI-based" : "Montreal",
+        "undefined" : "Montreal"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Doha",
+      "baseIri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight",
+      "comment" : {
+        "undefined" : "Sample airport: Doha, for use as the origin of a Qatar Airways flight."
+      },
+      "labels" : {
+        "IRI-based" : "Doha",
+        "undefined" : "Doha"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Luton",
+      "baseIri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight",
+      "comment" : {
+        "undefined" : "Sample airport: Luton, for use as the destination of a Ryanair flight."
+      },
+      "labels" : {
+        "IRI-based" : "Luton",
+        "undefined" : "Luton"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Faro",
+      "baseIri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight",
+      "comment" : {
+        "undefined" : "Sample airport: Faro, for use as the origin of a Ryanair flight."
+      },
+      "labels" : {
+        "IRI-based" : "Faro",
+        "undefined" : "Faro"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "A registered point in which an aircraft can take off or land."
+    },
+    "attributes" : [ "external" ],
+    "id" : "35",
+    "superClasses" : [ "47" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "72",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "112",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "11",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/ValueForMoneyRating",
+    "baseIri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ValueForMoneyRating",
+      "undefined" : "ValueForMoneyRating"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/VFMRating",
+      "baseIri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight",
+      "comment" : {
+        "undefined" : "Sample ValueForMoneyRating, for use in a Ryanair survey."
+      },
+      "labels" : {
+        "IRI-based" : "VFMRating",
+        "undefined" : "VFMRating"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "A rating for the appropriateness of the flight's price with respect to the quality of the experience."
+    },
+    "attributes" : [ "external" ],
+    "id" : "26",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/CabinStaffServiceRating",
+    "baseIri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CabinStaffServiceRating",
+      "undefined" : "CabinStaffServiceRating"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/CSSRating",
+      "baseIri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight",
+      "comment" : {
+        "undefined" : "Sample CabinStaffServiceRating, for use in a Ryanair survey."
+      },
+      "labels" : {
+        "IRI-based" : "CSSRating",
+        "undefined" : "CSSRating"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "A rating of the cabin staff service during the flight."
+    },
+    "attributes" : [ "external" ],
+    "id" : "30",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Enumerator",
+    "baseIri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Enumerator",
+      "undefined" : "Enumerator"
+    },
+    "subClasses" : [ "79", "7" ],
+    "comment" : {
+      "undefined" : "Superclass for all enumerator datatypes"
+    },
+    "attributes" : [ "external" ],
+    "id" : "80"
+  }, {
+    "iri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/QatarAirwaysSurvey",
+    "baseIri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "QatarAirwaysSurvey",
+      "undefined" : "QatarAirwaysSurvey"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/SurveyQ",
+      "baseIri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight",
+      "comment" : {
+        "undefined" : "Sample Qatar Airways survey"
+      },
+      "labels" : {
+        "IRI-based" : "SurveyQ",
+        "undefined" : "SurveyQ"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "A survey for a Qatar Airways flight."
+    },
+    "attributes" : [ "external" ],
+    "id" : "49",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/SeatType",
+    "baseIri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SeatType",
+      "undefined" : "SeatType"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/PremiumEconomy",
+      "baseIri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight",
+      "comment" : {
+        "undefined" : "SeatType: PremiumEconomy"
+      },
+      "labels" : {
+        "IRI-based" : "PremiumEconomy",
+        "undefined" : "PremiumEconomy"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/EconomyClass",
+      "baseIri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight",
+      "comment" : {
+        "undefined" : "SeatType: EconomyClass"
+      },
+      "labels" : {
+        "IRI-based" : "EconomyClass",
+        "undefined" : "EconomyClass"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/BusinessClass",
+      "baseIri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight",
+      "comment" : {
+        "undefined" : "SeatType: Business Class"
+      },
+      "labels" : {
+        "IRI-based" : "BusinessClass",
+        "undefined" : "BusinessClass"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/FirstClass",
+      "baseIri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight",
+      "comment" : {
+        "undefined" : "SeatType: FirstClass"
+      },
+      "labels" : {
+        "IRI-based" : "FirstClass",
+        "undefined" : "FirstClass"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Type of seat: { BusinessClass, EconomyClass, FirstClass, PremiumEconomy }"
+    },
+    "attributes" : [ "external" ],
+    "id" : "7",
+    "superClasses" : [ "80" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Flight",
+    "baseIri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Flight",
+      "undefined" : "Flight"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/FlightQ",
+      "baseIri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight",
+      "comment" : {
+        "undefined" : "Sample Qatar Airways flight."
+      },
+      "labels" : {
+        "IRI-based" : "FlightQ",
+        "undefined" : "FlightQ"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/FlightR",
+      "baseIri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight",
+      "comment" : {
+        "undefined" : "Sample Ryanair flight."
+      },
+      "labels" : {
+        "IRI-based" : "FlightR",
+        "undefined" : "FlightR"
+      }
+    } ],
+    "subClasses" : [ "70", "68" ],
+    "comment" : {
+      "undefined" : "A flight. Includes aircraft type, date and involved airports."
+    },
+    "attributes" : [ "external" ],
+    "id" : "23"
+  }, {
+    "iri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Aircraft",
+    "baseIri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Aircraft",
+      "undefined" : "Aircraft"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/A380",
+      "baseIri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight",
+      "comment" : {
+        "undefined" : "Sample aircraft: A380; for use in a Qatar Airways flight."
+      },
+      "labels" : {
+        "IRI-based" : "A380",
+        "undefined" : "A380"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Boeing_737_900",
+      "baseIri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight",
+      "comment" : {
+        "undefined" : "Sample aircraft: Boeing 737 900; for use in a Ryanair flight."
+      },
+      "labels" : {
+        "IRI-based" : "Boeing_737_900",
+        "undefined" : "Boeing 737 900"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "An aircraft model"
+    },
+    "attributes" : [ "external" ],
+    "id" : "115"
+  }, {
+    "iri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/FlightWithStops",
+    "baseIri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FlightWithStops",
+      "undefined" : "FlightWithStops"
+    },
+    "comment" : {
+      "undefined" : "A flight with one or more stops."
+    },
+    "attributes" : [ "external" ],
+    "id" : "68",
+    "superClasses" : [ "23" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/Traveler",
+    "baseIri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Traveler",
+      "undefined" : "Traveler"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/AuthorR",
+      "baseIri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight",
+      "comment" : {
+        "undefined" : "Sample Traveler for use as an author of a Ryanair survey"
+      },
+      "labels" : {
+        "IRI-based" : "AuthorR",
+        "undefined" : "AuthorR"
+      }
+    } ],
+    "subClasses" : [ "61" ],
+    "comment" : {
+      "undefined" : "A person that has taken a flight."
+    },
+    "attributes" : [ "external" ],
+    "id" : "41",
+    "superClasses" : [ "16" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/InflightEntertainmentRating",
+    "baseIri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InflightEntertainmentRating",
+      "undefined" : "InflightEntertainmentRating"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/IERating",
+      "baseIri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight",
+      "comment" : {
+        "undefined" : "Sample InflightEntertainmentRating, for use in a Ryanair survey."
+      },
+      "labels" : {
+        "IRI-based" : "IERating",
+        "undefined" : "IERating"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "A rating of the enterteinment offered in the flight."
+    },
+    "attributes" : [ "external" ],
+    "id" : "2",
+    "superClasses" : [ "9" ]
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "3",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "6",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "10",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "12",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "14",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "17",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "20",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "21",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "22",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "25",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "27",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "29",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "31",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "32",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "33",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "34",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "38",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "39",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "40",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "42",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "43",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "44",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "46",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "50",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "51",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "53",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "54",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "55",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "56",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "57",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "45",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "62",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "63",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "65",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "66",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "67",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "69",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "71",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "73",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "74",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "75",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "76",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "77",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "78",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "81",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "82",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "83",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "84",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "85",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "86",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "87",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "88",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "89",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "90",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "91",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "37",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "93",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "94",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "95",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "96",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "98",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "99",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "100",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "101",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "102",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "103",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "104",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "105",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "106",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "107",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "108",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "109",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "110",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "111",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "60",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "113",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "36",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "114",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "116",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "117",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "118",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "119",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "120",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "121",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "122",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "123",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "92",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "97",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "124",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "125",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "126",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "127",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "2",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/isVerified",
+    "baseIri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "isVerified",
+      "undefined" : "isVerified"
+    },
+    "cardinality" : "1",
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "Boolean. Whether a review is verified or not."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "3"
+  }, {
+    "iri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasSeatType",
+    "baseIri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "hasSeatType",
+      "undefined" : "hasSeatType"
+    },
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "Relates a survey with the type of seat that its traveler has sat on during the flight."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "6"
+  }, {
+    "iri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasGlobalValue",
+    "baseIri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "hasGlobalValue",
+      "undefined" : "hasGlobalValue"
+    },
+    "cardinality" : "1",
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Integer [1, 10]. The global score of a review."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "10"
+  }, {
+    "range" : "13",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "12"
+  }, {
+    "iri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/isCountryOf",
+    "baseIri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "isCountryOf",
+      "undefined" : "isCountryOf"
+    },
+    "domain" : "15",
+    "comment" : {
+      "undefined" : "Inverse of hasCountry. Relates a country to every airport that's in it."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "14"
+  }, {
+    "range" : "19",
+    "domain" : "18",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "17"
+  }, {
+    "range" : "2",
+    "domain" : "18",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "20"
+  }, {
+    "range" : "13",
+    "domain" : "18",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "21"
+  }, {
+    "iri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasFlightDate",
+    "baseIri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "hasFlightDate",
+      "undefined" : "hasFlightDate"
+    },
+    "cardinality" : "1",
+    "domain" : "23",
+    "comment" : {
+      "undefined" : "DateTime. The date of the flight."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "22"
+  }, {
+    "range" : "26",
+    "domain" : "18",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "25"
+  }, {
+    "range" : "28",
+    "domain" : "18",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "27"
+  }, {
+    "range" : "26",
+    "domain" : "30",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "29"
+  }, {
+    "range" : "28",
+    "domain" : "30",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "31"
+  }, {
+    "range" : "1",
+    "domain" : "18",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "32"
+  }, {
+    "range" : "19",
+    "domain" : "30",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "33"
+  }, {
+    "iri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasDestination",
+    "inverse" : "36",
+    "baseIri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight",
+    "range" : "35",
+    "label" : {
+      "IRI-based" : "hasDestination",
+      "undefined" : "hasDestination"
+    },
+    "superproperty" : [ "37" ],
+    "domain" : "23",
+    "comment" : {
+      "undefined" : "Relates a flight with the airport it's arrived in."
+    },
+    "attributes" : [ "object", "functional", "external" ],
+    "id" : "34"
+  }, {
+    "iri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasCountry",
+    "inverse" : "14",
+    "baseIri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "hasCountry",
+      "undefined" : "hasCountry"
+    },
+    "domain" : "16",
+    "comment" : {
+      "undefined" : "Relates a person with its nationality or nationalities."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "38"
+  }, {
+    "range" : "13",
+    "domain" : "30",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "39"
+  }, {
+    "range" : "1",
+    "domain" : "30",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "40"
+  }, {
+    "range" : "2",
+    "domain" : "30",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "42"
+  }, {
+    "range" : "4",
+    "domain" : "8",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "43"
+  }, {
+    "iri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/isStopOf",
+    "baseIri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight",
+    "range" : "23",
+    "label" : {
+      "IRI-based" : "isStopOf",
+      "undefined" : "isStopOf"
+    },
+    "superproperty" : [ "45" ],
+    "domain" : "35",
+    "comment" : {
+      "undefined" : "Inverse of hasStop. Relates an airport with every flight that stops there."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "44"
+  }, {
+    "range" : "4",
+    "domain" : "47",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "46"
+  }, {
+    "range" : "18",
+    "domain" : "30",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "50"
+  }, {
+    "iri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasRecommendation",
+    "baseIri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight",
+    "range" : "52",
+    "label" : {
+      "IRI-based" : "hasRecommendation",
+      "undefined" : "hasRecommendation"
+    },
+    "cardinality" : "1",
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "Boolean. Whether the service was recommended or not."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "51"
+  }, {
+    "range" : "15",
+    "domain" : "35",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "53"
+  }, {
+    "range" : "8",
+    "domain" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "54"
+  }, {
+    "range" : "8",
+    "domain" : "47",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "55"
+  }, {
+    "iri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasStop",
+    "inverse" : "44",
+    "baseIri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight",
+    "range" : "35",
+    "label" : {
+      "IRI-based" : "hasStop",
+      "undefined" : "hasStop"
+    },
+    "superproperty" : [ "37" ],
+    "domain" : "23",
+    "comment" : {
+      "undefined" : "Relates a flight with the airport or airports it's stopped in, if any."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "56"
+  }, {
+    "range" : "4",
+    "domain" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "57"
+  }, {
+    "iri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/isAirportOf",
+    "baseIri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight",
+    "range" : "23",
+    "label" : {
+      "IRI-based" : "isAirportOf",
+      "undefined" : "isAirportOf"
+    },
+    "domain" : "35",
+    "subproperty" : [ "60", "36", "44" ],
+    "comment" : {
+      "undefined" : "Inverse of hasAirport. Superclass for isOriginOf, isDestinationOf and isStopOf."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "45"
+  }, {
+    "range" : "48",
+    "domain" : "49",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "62"
+  }, {
+    "iri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasCountry",
+    "inverse" : "14",
+    "baseIri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "hasCountry",
+      "undefined" : "hasCountry"
+    },
+    "domain" : "16",
+    "comment" : {
+      "undefined" : "Relates a person with its nationality or nationalities."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "63"
+  }, {
+    "range" : "19",
+    "domain" : "26",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "65"
+  }, {
+    "range" : "19",
+    "domain" : "28",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "66"
+  }, {
+    "iri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasStop",
+    "inverse" : "44",
+    "baseIri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight",
+    "range" : "35",
+    "label" : {
+      "IRI-based" : "hasStop",
+      "undefined" : "hasStop"
+    },
+    "superproperty" : [ "37" ],
+    "domain" : "68",
+    "comment" : {
+      "undefined" : "Relates a flight with the airport or airports it's stopped in, if any."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "67"
+  }, {
+    "range" : "68",
+    "domain" : "70",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "69"
+  }, {
+    "iri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasTitle",
+    "baseIri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight",
+    "range" : "72",
+    "label" : {
+      "IRI-based" : "hasTitle",
+      "undefined" : "hasTitle"
+    },
+    "cardinality" : "1",
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "String. The title of a review."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "71"
+  }, {
+    "range" : "26",
+    "domain" : "28",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "73"
+  }, {
+    "range" : "19",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "74"
+  }, {
+    "range" : "26",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "75"
+  }, {
+    "range" : "26",
+    "domain" : "13",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "76"
+  }, {
+    "range" : "28",
+    "domain" : "13",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "77"
+  }, {
+    "range" : "28",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "78"
+  }, {
+    "range" : "19",
+    "domain" : "13",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "81"
+  }, {
+    "range" : "26",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "82"
+  }, {
+    "range" : "28",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "83"
+  }, {
+    "range" : "2",
+    "domain" : "13",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "84"
+  }, {
+    "range" : "19",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "85"
+  }, {
+    "range" : "80",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "86"
+  }, {
+    "range" : "80",
+    "domain" : "79",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "87"
+  }, {
+    "range" : "23",
+    "domain" : "68",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "88"
+  }, {
+    "range" : "23",
+    "domain" : "70",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "89"
+  }, {
+    "iri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasName",
+    "baseIri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight",
+    "range" : "58",
+    "label" : {
+      "IRI-based" : "hasName",
+      "undefined" : "hasName"
+    },
+    "maxCardinality" : "1",
+    "domain" : "16",
+    "comment" : {
+      "undefined" : "String. The name of a person."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "90"
+  }, {
+    "range" : "47",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "91"
+  }, {
+    "iri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasAirport",
+    "inverse" : "45",
+    "baseIri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight",
+    "range" : "35",
+    "label" : {
+      "IRI-based" : "hasAirport",
+      "undefined" : "hasAirport"
+    },
+    "domain" : "23",
+    "subproperty" : [ "92", "34", "56" ],
+    "comment" : {
+      "undefined" : "Superclass for hasOrigin, hasDestination and hasStop."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "37"
+  }, {
+    "iri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasRating",
+    "baseIri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "hasRating",
+      "undefined" : "hasRating"
+    },
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "Relates a survey with its associated rating or ratings."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "93"
+  }, {
+    "range" : "47",
+    "domain" : "35",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "94"
+  }, {
+    "range" : "9",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "95"
+  }, {
+    "iri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasAuthor",
+    "inverse" : "97",
+    "baseIri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight",
+    "range" : "41",
+    "label" : {
+      "IRI-based" : "hasAuthor",
+      "undefined" : "hasAuthor"
+    },
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "Relates a survey with its author."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "96"
+  }, {
+    "range" : "9",
+    "domain" : "13",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "98"
+  }, {
+    "range" : "9",
+    "domain" : "26",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "99"
+  }, {
+    "range" : "9",
+    "domain" : "18",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "100"
+  }, {
+    "range" : "9",
+    "domain" : "30",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "101"
+  }, {
+    "iri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasComment",
+    "baseIri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight",
+    "range" : "64",
+    "label" : {
+      "IRI-based" : "hasComment",
+      "undefined" : "hasComment"
+    },
+    "cardinality" : "1",
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "String. The body of the review."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "102"
+  }, {
+    "range" : "4",
+    "domain" : "49",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "103"
+  }, {
+    "range" : "4",
+    "domain" : "48",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "104"
+  }, {
+    "range" : "9",
+    "domain" : "28",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "105"
+  }, {
+    "iri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasPublicationDate",
+    "baseIri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight",
+    "range" : "59",
+    "label" : {
+      "IRI-based" : "hasPublicationDate",
+      "undefined" : "hasPublicationDate"
+    },
+    "cardinality" : "1",
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "DateTime. The publication date of a review."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "106"
+  }, {
+    "range" : "9",
+    "domain" : "19",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "107"
+  }, {
+    "iri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasFlight",
+    "baseIri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight",
+    "range" : "23",
+    "label" : {
+      "IRI-based" : "hasFlight",
+      "undefined" : "hasFlight"
+    },
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "Relates a survey with its associated flight."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "108"
+  }, {
+    "range" : "8",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "109"
+  }, {
+    "range" : "8",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "110"
+  }, {
+    "range" : "16",
+    "domain" : "41",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "111"
+  }, {
+    "iri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/isOriginOf",
+    "baseIri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight",
+    "range" : "23",
+    "label" : {
+      "IRI-based" : "isOriginOf",
+      "undefined" : "isOriginOf"
+    },
+    "superproperty" : [ "45" ],
+    "domain" : "35",
+    "comment" : {
+      "undefined" : "Inverse of hasOrigin. Relates an airport with every flight that departs from there."
+    },
+    "attributes" : [ "object", "inverse functional", "external" ],
+    "id" : "60"
+  }, {
+    "iri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasSpecificValue",
+    "baseIri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight",
+    "range" : "112",
+    "label" : {
+      "IRI-based" : "hasSpecificValue",
+      "undefined" : "hasSpecificValue"
+    },
+    "cardinality" : "1",
+    "domain" : "9",
+    "comment" : {
+      "undefined" : "Float [1.0, 5.0]. The score of a specific review."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "113"
+  }, {
+    "iri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/isDestinationOf",
+    "baseIri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight",
+    "range" : "23",
+    "label" : {
+      "IRI-based" : "isDestinationOf",
+      "undefined" : "isDestinationOf"
+    },
+    "superproperty" : [ "45" ],
+    "domain" : "35",
+    "comment" : {
+      "undefined" : "Inverse of hasDestination. Relates an airport with every flight that arrives in there."
+    },
+    "attributes" : [ "object", "inverse functional", "external" ],
+    "id" : "36"
+  }, {
+    "range" : "47",
+    "domain" : "115",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "114"
+  }, {
+    "range" : "8",
+    "domain" : "115",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "116"
+  }, {
+    "range" : "4",
+    "domain" : "115",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "117"
+  }, {
+    "range" : "16",
+    "domain" : "23",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "118"
+  }, {
+    "range" : "47",
+    "domain" : "23",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "119"
+  }, {
+    "range" : "8",
+    "domain" : "23",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "120"
+  }, {
+    "range" : "4",
+    "domain" : "23",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "121"
+  }, {
+    "iri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasAircraft",
+    "baseIri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight",
+    "range" : "115",
+    "label" : {
+      "IRI-based" : "hasAircraft",
+      "undefined" : "hasAircraft"
+    },
+    "domain" : "23",
+    "comment" : {
+      "undefined" : "Relates a flight with the aircraft that's flown it."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "122"
+  }, {
+    "range" : "47",
+    "domain" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "123"
+  }, {
+    "iri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasOrigin",
+    "inverse" : "60",
+    "baseIri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight",
+    "range" : "35",
+    "label" : {
+      "IRI-based" : "hasOrigin",
+      "undefined" : "hasOrigin"
+    },
+    "superproperty" : [ "37" ],
+    "domain" : "23",
+    "comment" : {
+      "undefined" : "Relates a flight with the airport it's departed from."
+    },
+    "attributes" : [ "object", "functional", "external" ],
+    "id" : "92"
+  }, {
+    "iri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/isAuthorOf",
+    "baseIri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "isAuthorOf",
+      "undefined" : "isAuthorOf"
+    },
+    "domain" : "41",
+    "comment" : {
+      "undefined" : "Inverse of hasAuthor. Relates a traveler with the surveys they've answered."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "97"
+  }, {
+    "range" : "23",
+    "domain" : "115",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "124"
+  }, {
+    "range" : "16",
+    "domain" : "115",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "125"
+  }, {
+    "iri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight/hasTravelerType",
+    "baseIri" : "http://www.semanticweb.org/harol/ontologies/2024/3/OntoSatisflight",
+    "range" : "79",
+    "label" : {
+      "IRI-based" : "hasTravelerType",
+      "undefined" : "hasTravelerType"
+    },
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "Relates a survey with the type of traveler that has answered it."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "126"
+  }, {
+    "range" : "41",
+    "domain" : "61",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "127"
+  } ]
+}
